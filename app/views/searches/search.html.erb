@@ -1,5 +1,5 @@
 <% if @range == "User" %>
-    <h2>User search for <%= @word %></h2>
+    <h2>User search for "<%= @word %>"</h2>
     <table class="table">
       <% @users.each do |user| %>
         <tbody>
@@ -21,7 +21,7 @@
       <% end %>
     </table>
 <% else %>
-  <h2>Book search for <%= @word %> </h2>
+  <h2>Book search for "<%= @word %>" </h2>
   <table class="table">
     <% @books.each do |book| %>
       <tbody>
